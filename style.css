@@ -1,86 +1,88 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-.c{
+.c {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     height: 100vh;
     background: linear-gradient(rgb(0 0 0 / 60%) 0 0), url(nyc.webp) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
-}
-.baslık{
-    color: rgb(255, 162, 0);
-}
-h1{
-    font-size: 6rem;
-}
-.celsius{
-    font-size: 5rem;
+    padding: 2rem;
     text-align: center;
-
 }
-.city::placeholder{
+
+.baslık {
+    color: rgb(255, 162, 0);
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.celsius {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.city::placeholder {
     color: white;
     text-align: center;
     text-transform: lowercase;
-    
 }
 
-
-
-.city{
+.city {
     background: transparent;
     border: 0;
-    border-bottom:  2px solid rgb(255, 162, 0) ;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(255, 162, 0);
+    padding: 0.5rem;
+    font-size: 1.2rem;
     outline: none;
-    
-    
+    width: 100%;
+    max-width: 15rem;
+    margin-top: 1rem;
 }
 
-
-.veri{
+.veri {
     background: transparent;
     color: white;
     border-color: rgb(255, 162, 0);
-    margin-top: 7px;
+    margin-top: 1rem;
     text-align: center;
     outline: none;
-    padding: 1px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 0.5rem;
     font-size: 1rem;
-    margin-top: 2rem;
-    width: 13rem;
-
-}
-.veri:hover{
-    background-color:rgb(255, 162, 0) ;
-   
+    width: 100%;
 }
 
-.ülkem{
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 15px;
+/* Küçük ekranlar için medya sorgusu */
+@media screen and (max-width: 600px) {
+    .baslık {
+        font-size: 1.5rem; /* Yazı boyutunu küçülttük */
+    }
 
-}
-.hissedilen{
-    font-size: 2rem;
-}
-.havadurumu{
-    font-size: 2rem;
+    h1 {
+        font-size: 3rem; /* Yazı boyutunu küçülttük */
+    }
+
+    .celsius {
+        font-size: 2rem; /* Yazı boyutunu küçülttük */
+    }
+
+    .city {
+        font-size: 1rem; /* Yazı boyutunu küçülttük */
+        padding: 0.3rem; /* Padding'i düzenledik */
+    }
+
+    .veri {
+        font-size: 0.8rem; /* Yazı boyutunu küçülttük */
+        padding: 0.3rem; /* Padding'i düzenledik */
+    }
 }
